@@ -3,22 +3,22 @@
 
 
     <sitemap>
-        <loc>http://example.com/post-sitemap.xml</loc>
+        <loc>https://www.kuhehe.top/post-sitemap.xml</loc>
         <lastmod>2023-01-29T15:54:08.564Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://example.com/page-sitemap.xml</loc>
-        <lastmod>2023-01-29T15:48:03.751Z</lastmod>
+        <loc>https://www.kuhehe.top/page-sitemap.xml</loc>
+        <lastmod>2023-01-30T02:57:31.442Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://example.com/category-sitemap.xml</loc>
+        <loc>https://www.kuhehe.top/category-sitemap.xml</loc>
         <lastmod>2023-01-29T15:54:08.564Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://example.com/tag-sitemap.xml</loc>
+        <loc>https://www.kuhehe.top/tag-sitemap.xml</loc>
         <lastmod>2023-01-29T15:54:08.564Z</lastmod>
     </sitemap>
 

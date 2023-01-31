@@ -391,8 +391,8 @@ pre:not([class]):has(>code) {
   line-height: 1.5;
 }
 .md-text .highlight >table::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+  height: 5px;
+  width: 5px;
 }
 .md-text .highlight >table::-webkit-scrollbar-track-piece {
   background: transparent;

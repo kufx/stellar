@@ -9,22 +9,15 @@
 
 
     <url>
-        <loc>https://www.kuhehe.top/categories/%25E5%25BB%25BA%25E7%25AB%2599/</loc>
-        <lastmod>2023-01-31T14:31:14.745Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/categories/%25E5%258D%259A%25E5%25AE%25A2%25EF%25BC%258C%25E5%25BB%25BA%25E7%25AB%2599/</loc>
-        <lastmod>2023-01-31T13:52:35.239Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://www.kuhehe.top/categories/%25E5%258D%259A%25E5%25AE%25A2/</loc>
-        <lastmod>2023-01-31T11:26:08.064Z</lastmod>
+        <lastmod>2023-01-31T15:10:46.128Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/categories/%25E5%25BB%25BA%25E7%25AB%2599/</loc>
+        <lastmod>2023-01-31T15:10:46.128Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

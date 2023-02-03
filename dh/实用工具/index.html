@@ -80,7 +80,18 @@
 
   
     
+      <script>
+  if (window.localStorage.getItem('ZYI_Theme_Mode')==='dark' || (window.localStorage.getItem('ZYI_Theme_Mode')==='Moss' && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+      document.querySelector("html").id = "ZYDark";
+  }
+</script>
+
+    
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/agate.min.css">
+    
+      <link rel="stylesheet" href="https://upyun.thatcdn.cn/public/web/stellar-1.18.5/ZYDark.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
     
   
 </head>
@@ -168,6 +179,7 @@ show_runtime();
 <span id="runtime_span"></span>
 </center>
 </div></footer>
+
 
 
 
@@ -359,6 +371,12 @@ show_runtime();
 
 
 <!-- inject -->
+
+  
+    <script type="text/javascript" src="https://upyun.thatcdn.cn/public/web/stellar-1.18.5/ZYDark.js"></script>
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+  
 
 
 

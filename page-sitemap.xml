@@ -10,6 +10,15 @@
     
     
     <url>
+        <loc>https://www.kuhehe.top/about/</loc>
+        <lastmod>2023-02-14T15:32:16.164Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://www.kuhehe.top/dh/</loc>
         <lastmod>2023-02-14T08:38:28.845Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -246,15 +255,6 @@
     <url>
         <loc>https://www.kuhehe.top/dh/%25E8%25BD%25AF%25E4%25BB%25B6%25E4%25B8%2593%25E5%258C%25BA/</loc>
         <lastmod>2023-02-01T06:06:57.731Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://www.kuhehe.top/about/</loc>
-        <lastmod>2023-02-01T05:10:38.391Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
     </url>

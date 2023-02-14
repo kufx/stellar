@@ -372,7 +372,7 @@ show_runtime();
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
-      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://comment.kuhehe.top/","commentCount":true,"pageview":false,"emoji":["https://unpkg.com/@waline/emojis@1.1.0/weibo","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/tieba","https://unpkg.com/@waline/emojis@1.1.0/tw-emoji","https://unpkg.com/@waline/emojis@1.1.0/bmoji"]}, {
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://comment.kuhehe.top/","commentCount":true,"pageview":false,"emoji":["https://unpkg.com/@waline/emojis@1.1.0/weibo","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/tieba","https://unpkg.com/@waline/emojis@1.1.0/tw-emoji","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"locale":{"reactionTitle":"你认为这篇文章怎么样？","reaction0":"真不错","reaction1":"一般般","reaction2":"嘚瑟~","reaction3":"无语"},"reaction":["https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png","https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png","https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png","https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png"]}, {
         el: '#waline_container',
         path: path,
       }));

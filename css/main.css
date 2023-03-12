@@ -1144,7 +1144,7 @@ div.toast {
   line-height: 1.5;
 }
 .page-footer .text a:not([class]) {
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
 }
 .nav-wrap {

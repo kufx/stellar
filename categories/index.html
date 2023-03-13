@@ -212,32 +212,11 @@
 <center><iframe frameborder=0  height=50px marginwidth=0 scrolling=no src="https://time-counter.onmicrosoft.cn/room/kuhehe667"></iframe></center>
 </br>
 </br>
-<!--不蒜子计数器-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!--添加一个访问量-->
 <span>
                 本"<span style="color: rgb(13, 109, 252); font-weight: bold;">页面</ a></span>"访问 <span id="busuanzi_value_page_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 次 | 👀总访问 <span id="busuanzi_value_site_pv" style="color: rgb(13, 109, 252); font-weight: bold;"></span>                次 | 🥷总访客 <span id="busuanzi_value_site_uv" style="color: rgb(13, 109, 252); font-weight: bold;"></span> 人
             </span>
 </br>
-</br>
-<script type="text/javascript">
-function show_runtime() {
-    window.setTimeout("show_runtime()", 1000);
-    X = new Date("1/15/2023 00:00:00");
-    Y = new Date();
-    T = (Y.getTime() - X.getTime());
-    M = 24 * 60 * 60 * 1000;
-    a = T / M;
-    A = Math.floor(a);
-    b = (a - A) * 24;
-    B = Math.floor(b);
-    c = (b - B) * 60;
-    C = Math.floor((b - B) * 60);
-    D = Math.floor((c - C) * 60);
-    runtime_span.innerHTML = "⏱️ 本站已运行 " + A + "天" + B + "小时" + C + "分" + D + "秒"
-}
-show_runtime();
-</script>
 <span id="runtime_span"></span>
 </center>
 </br>
@@ -435,6 +414,26 @@ show_runtime();
 
   </div>
 <script src="//topurl.cn/chat.js" async="async" fold></script>
+<!--不蒜子计数器-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript">
+    function show_runtime() {
+        window.setTimeout("show_runtime()", 1000);
+        X = new Date("1/15/2023 00:00:00");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+        runtime_span.innerHTML = "⏱️ 本站已运行 " + A + "天" + B + "小时" + C + "分" + D + "秒"
+    }
+    show_runtime();
+    </script>
 <!-- hexo injector body_end start -->
   <style>
     .highlight {

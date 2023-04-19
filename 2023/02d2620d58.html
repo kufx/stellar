@@ -94,6 +94,8 @@
     
       <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="all" />
     
+      <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.6/tianli_gpt.css">
+    
   
 <!-- Cronitor RUM -->
 <script async src="https://rum.cronitor.io/script.js"></script>
@@ -146,7 +148,7 @@
 
 <div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E5%85%AC%E5%91%8A/">公告</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-02-14T08:25:30.000Z">2023-02-14</time><br />阅读: <span id="busuanzi_value_page_pv">-</span> 🔥 访客: <span id="busuanzi_value_page_uv">-</span></div></div>
 
-<article class='md-text content post reveal'>
+<article class='md-text content post'>
 <h1 class="article-title"><span>💢公告-博客动态发布💢</span></h1>
 <div class="tag-plugin about"><div class="about-body fs14"><p>这里会公布一些关于本站的公告，因为要开学了，的有几个月不发啥文章了，不过如果我发现了什么好的东西，会在右上角的导航里不定时分享的，没事可以看看，谢谢。 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer" style="color:red"></i></p><div class="tag-plugin timeline stellar-timeline-api" api="https://api.github.com/repos/Kuhehe666/fx-issues/issues" user="Kuhehe666"></div></div></div>
 
@@ -334,16 +336,16 @@
   stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
   // optional plugins
   if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"fade"});
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
   }
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
-  if ('true' == 'true') {
-    stellar.plugins.scrollreveal = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  if ('false' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
   if ('true' == 'true') {
-    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"instant_page","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
   if ('true' == 'true') {
     stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});

@@ -36,7 +36,7 @@
   }
 }
 :root {
-  --site-bg: #c5ecca;
+  --site-bg: #f1e6ca;
   --card: #fff;
   --block: #f1f2f3;
   --block-border: #e3e5e8;
@@ -53,7 +53,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --site-bg: #487a4f;
+    --site-bg: #70613d;
     --card: #373d43;
     --block: #26292c;
     --block-border: #383d42;

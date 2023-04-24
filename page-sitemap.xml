@@ -10,6 +10,33 @@
     
     
     <url>
+        <loc>https://www.kuhehe.top/about/</loc>
+        <lastmod>2023-04-24T11:31:51.098Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://www.kuhehe.top/friends/</loc>
+        <lastmod>2023-04-24T11:27:21.694Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://www.kuhehe.top/password/</loc>
+        <lastmod>2023-04-24T10:59:40.494Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://www.kuhehe.top/dh/</loc>
         <lastmod>2023-04-21T03:15:52.940Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -21,24 +48,6 @@
     <url>
         <loc>https://www.kuhehe.top/cg/</loc>
         <lastmod>2023-03-25T14:50:48.823Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://www.kuhehe.top/about/</loc>
-        <lastmod>2023-03-24T05:21:22.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://www.kuhehe.top/friends/</loc>
-        <lastmod>2023-03-14T14:16:00.402Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
     </url>

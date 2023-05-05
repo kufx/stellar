@@ -52,7 +52,7 @@
 <meta property="og:description" content="磁力网站分享">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-12T14:27:25.000Z">
-<meta property="article:modified_time" content="2023-04-10T13:35:23.625Z">
+<meta property="article:modified_time" content="2023-05-05T11:45:11.357Z">
 <meta property="article:author" content="酷小呵">
 <meta property="article:tag" content="分享">
 <meta property="article:tag" content="资源">
@@ -399,7 +399,7 @@
       <div class='title cap theme'>您可能感兴趣的文章</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="\2023\02ad0f51be.html" title="几个好站分享一下"><span class="title">几个好站分享一下</span><span class="excerpt">好站推荐🤣</span></a><a class="item" href="\2023\023ea5a834.html" title="全网免费音乐搜索汇总"><span class="title">全网免费音乐搜索汇总</span><span class="excerpt">免费音乐搜索下载网站，这里分享的网站均来源网友推荐及搜索引擎</span></a><a class="item" href="\2023\02a7ce9b7b.html" title="安卓Apk应用下载"><span class="title">安卓Apk应用下载</span><span class="excerpt">安卓Apk应用下载</span></a><a class="item" href="\2023\022dbb2d2a.html" title="免费影视软件分享"><span class="title">免费影视软件分享</span><span class="excerpt">今天就分享几个我收藏的几个，我自己认为比较好的安卓影视软件 </span></a><a class="item" href="\2023\02a48c5aeb.html" title="即将跳转到外部网站，安全性未知"><span class="title">即将跳转到外部网站，安全性未知</span><span class="excerpt">避免在社交软件及网站统计中获取来路信息，保护隐私。</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="\2023\02a7ce9b7b.html" title="安卓Apk应用下载"><span class="title">安卓Apk应用下载</span><span class="excerpt">安卓Apk应用下载</span></a><a class="item" href="\2023\023ea5a834.html" title="全网免费音乐搜索汇总"><span class="title">全网免费音乐搜索汇总</span><span class="excerpt">免费音乐搜索下载网站，这里分享的网站均来源网友推荐及搜索引擎</span></a><a class="item" href="\2023\02ad0f51be.html" title="几个好站分享一下"><span class="title">几个好站分享一下</span><span class="excerpt">好站推荐🤣</span></a><a class="item" href="\2023\02a48c5aeb.html" title="即将跳转到外部网站，安全性未知"><span class="title">即将跳转到外部网站，安全性未知</span><span class="excerpt">避免在社交软件及网站统计中获取来路信息，保护隐私。</span></a></div></section></div>
 
 
 
@@ -581,6 +581,14 @@
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
+
+
+  // -------- start 自定义首页文章轮播
+  if ('true' == 'true') {
+    stellar.plugins.customSwiperTopArticle = Object.assign({"enable":true,"css":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/css/swiper/swiper.min.css","js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper.min.js","init_js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper_init.js"});
+  }
+  // -------- end 自定义首页文章轮播
+
   if ('false' == 'true') {
     stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
@@ -641,6 +649,7 @@
   
     <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script>
   
+
 
 
 

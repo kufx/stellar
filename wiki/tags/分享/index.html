@@ -141,7 +141,6 @@
 
   
 
-
   
 
 <div class="nav-wrap"><nav class="sub wiki cap"><a href="/wiki">所有项目</a></a><a class="active" href="/wiki/tags/%E5%88%86%E4%BA%AB/index.html">分享</a></a><a href="/wiki/tags/%E8%B5%84%E6%BA%90/index.html">资源</a></a><a href="/wiki/tags/%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89/index.html">知乎盐选</a></a></nav></div>
@@ -153,6 +152,8 @@
 </a></div><div class="post-list wiki filter"><a class="post-card wiki " href="/wiki/%E7%9F%A5%E4%B9%8E%E7%9B%90%E9%80%89/index.html">
 <article class="md-text"><div class="preview"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.yimian.xyz/img" alt="logo" height="112px"/></div><div class="excerpt"><div class="cap breadcrumb">分享</div><h2 class="post-title">知乎盐选🧡文章收集</h2><p>这里，是我存放收集的🧡知乎盐选🧡的地方，希望能对读者有所帮助k。 点击右下角按钮即可查看文章目录。 也可通过搜索功能搜索文章，谢谢。</p></div></article>
 </a></div>
+
+
 
 
 
@@ -321,6 +322,14 @@
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
+
+
+  // -------- start 自定义首页文章轮播
+  if ('true' == 'true') {
+    stellar.plugins.customSwiperTopArticle = Object.assign({"enable":true,"css":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/css/swiper/swiper.min.css","js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper.min.js","init_js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper_init.js"});
+  }
+  // -------- end 自定义首页文章轮播
+
   if ('false' == 'true') {
     stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
@@ -357,6 +366,7 @@
   
     <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script>
   
+
 
 
 

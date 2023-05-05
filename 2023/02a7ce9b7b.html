@@ -227,7 +227,7 @@
       <div class='title cap theme'>您可能感兴趣的文章</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="\2023\02ad0f51be.html" title="几个好站分享一下"><span class="title">几个好站分享一下</span><span class="excerpt">好站推荐🤣</span></a><a class="item" href="\2023\023ea5a834.html" title="全网免费音乐搜索汇总"><span class="title">全网免费音乐搜索汇总</span><span class="excerpt">免费音乐搜索下载网站，这里分享的网站均来源网友推荐及搜索引擎</span></a><a class="item" href="\2023\028d076785.html" title="磁力网站收集分享"><span class="title">磁力网站收集分享</span><span class="excerpt">磁力网站分享</span></a><a class="item" href="\2023\04a0bffb7f.html" title="免费知乎盐选分享"><span class="title">免费知乎盐选分享</span><span class="excerpt">免费知乎盐选分享</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="\2023\023ea5a834.html" title="全网免费音乐搜索汇总"><span class="title">全网免费音乐搜索汇总</span><span class="excerpt">免费音乐搜索下载网站，这里分享的网站均来源网友推荐及搜索引擎</span></a><a class="item" href="\2023\02ad0f51be.html" title="几个好站分享一下"><span class="title">几个好站分享一下</span><span class="excerpt">好站推荐🤣</span></a><a class="item" href="\2023\028d076785.html" title="磁力网站收集分享"><span class="title">磁力网站收集分享</span><span class="excerpt">磁力网站分享</span></a><a class="item" href="\2023\04a0bffb7f.html" title="免费知乎盐选分享"><span class="title">免费知乎盐选分享</span><span class="excerpt">免费知乎盐选分享</span></a></div></section></div>
 
 
 
@@ -409,6 +409,14 @@
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
+
+
+  // -------- start 自定义首页文章轮播
+  if ('true' == 'true') {
+    stellar.plugins.customSwiperTopArticle = Object.assign({"enable":true,"css":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/css/swiper/swiper.min.css","js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper.min.js","init_js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper_init.js"});
+  }
+  // -------- end 自定义首页文章轮播
+
   if ('false' == 'true') {
     stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
@@ -469,6 +477,7 @@
   
     <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.7/tianli_gpt.js"></script>
   
+
 
 
 

@@ -254,8 +254,39 @@ if (stellar.plugins.stellar) {
   }
 }
 
-// swiper
+// ------------------- start 首页置顶文章轮播  新增
 if (stellar.plugins.swiper) {
+ const swiper_container = document.getElementById('swiper_container');
+ if (swiper_container !== undefined) {
+   stellar.loadCSS(stellar.plugins.customSwiperTopArticle.css);
+   stellar.loadScript(stellar.plugins.customSwiperTopArticle.js, {defer:true}).then(function () {
+     var swiper = new Swiper('.blog-slider', {
+       passiveListeners: true,
+       spaceBetween: 30,
+       effect: 'fade',
+       loop: true,
+       autoplay: {
+         disableOnInteraction: true,
+         delay: 3000
+       },
+       mousewheel: false,
+       // autoHeight: true,
+       pagination: {
+         el: '.blog-slider__pagination',
+         clickable: true,
+       }
+       swiper.autoplay.stop();
+     };
+     swiper_container.onmouseleave = function() {
+       swiper.autoplay.start();
+     }
+   });
+ }
+
+// ------------------- end 首页置顶文章轮播  新增
+
+// swiper
+// if (stellar.plugins.swiper) {
   const swiper_api = document.getElementById('swiper-api');
   if (swiper_api != undefined) {
     stellar.loadCSS(stellar.plugins.swiper.css);

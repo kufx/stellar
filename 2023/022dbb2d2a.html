@@ -53,7 +53,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatrainbow.png">
 <meta property="article:published_time" content="2023-02-01T07:16:17.000Z">
-<meta property="article:modified_time" content="2023-05-05T14:36:57.097Z">
+<meta property="article:modified_time" content="2023-05-06T11:56:40.497Z">
 <meta property="article:author" content="酷小呵">
 <meta property="article:tag" content="影视软件">
 <meta property="article:tag" content="资源">
@@ -411,6 +411,14 @@
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
+
+  // -------- start 自定义首页文章轮播
+ if ('true' == 'true') {
+   stellar.plugins.customSwiperTopArticle = Object.assign({"enable":true,"css":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/css/swiper/swiper.min.css","js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper.min.js","init_js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/swiper/swiper_init.js"});
+ }
+ // -------- end 自定义首页文章轮播
+
+
   if ('false' == 'true') {
     stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }

@@ -24,7 +24,7 @@
 </script>
 
   <meta name="generator" content="Hexo 6.3.0">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
   <meta charset="utf-8">
   
 
@@ -141,6 +141,9 @@
   <h2 id="分享好东西"><a href="#分享好东西" class="headerlink" title="分享好东西"></a>分享好东西</h2><blockquote>
 <div class="tag-plugin toc" display="mobile" style="display:none"><details class="toc" open><summary>导航目录</summary><div class="body fs14 multi"><section><div class="header">我的分享</div><ul class="toc"><li><a class="list-link" href="/wiki/%E5%88%86%E4%BA%AB/%E5%85%8D%E8%B4%B9%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/index.html"><span>免费影视软件分享</span></a></li><li><a class="list-link" href="/wiki/%E5%88%86%E4%BA%AB/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99%E6%94%B6%E9%9B%86%E5%88%86%E4%BA%AB/index.html"><span>影视网站分享</span></a></li><li><a class="list-link" href="/wiki/%E5%88%86%E4%BA%AB/%E9%98%BF%E9%87%8C%E7%BD%91%E7%9B%98%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/index.html"><span>阿里云盘资源链接汇总</span></a></li></ul></section><section><div class="header">哈哈哈</div><ul class="toc"><li><a class="list-link" href="/wiki/%E5%88%86%E4%BA%AB/%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B/index.html"><span>这个是测试</span></a></li></ul></section></div></details></div></blockquote>
 
+  
+        
+  
   
 
 
@@ -425,75 +428,5 @@
     }
     show_runtime();
     </script>
-<!-- hexo injector body_end start -->
-  <style>
-    .highlight {
-      position: relative;
-    }
-    .highlight .code .copy-btn{
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 4px 0.5rem;
-      opacity: 0.25;
-      font-weight: 700;
-      color: var(--theme);
-      cursor: pointer;
-      transination: opacity 0.3s;
-    }
-    .highlight .code .copy-btn:hover{
-      color: var(--text-code);
-      opacity: 0.75;
-    }
-    .highlight .code .copy-btn.success {
-      color: var(--swiper-theme-color);
-      opacity: 0.75;
-
-    }
-    
-  </style>
-  <script>
-    const codeElementArr = document.querySelectorAll('.code')
-    codeElementArr.forEach(code => {
-      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
-      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
-  
-      // copy btn 
-      const codeCopyBtn = document.createElement('div')
-      codeCopyBtn.classList.add('copy-btn')
-      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
-      codeCopyBtn.innerText = '复制代码'
-      code.appendChild(codeCopyBtn)
-  
-      codeCopyBtn.addEventListener('click', async () => {
-        const currentCodeElement = code.children[0]?.innerText
-        await copyCode(currentCodeElement)
-
-
-        codeCopyBtn.innerText = '复制成功'
-        codeCopyBtn.classList.add('success')
-
-        setTimeout(() => {
-          codeCopyBtn.innerText = '复制代码'
-          codeCopyBtn.classList.remove('success')
-        },1000)
-      })
-    })
-    
-    async function copyCode(currentCode) {
-      console.log(currentCode)
-      console.log('复制代码')
-      if (navigator.clipboard) {
-        try {
-          await navigator.clipboard.writeText(currentCode)
-        } catch (error) {
-          // 未获得用户许可
-          console.error(error)
-        }
-      } else {
-        console.error('当前浏览器不支持此api')
-      }
-    }
-  </script>
-  <!-- hexo injector body_end end --></body>
+</body>
 </html>

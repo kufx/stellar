@@ -230,7 +230,7 @@
       <div class='title cap theme'>您可能感兴趣的文章</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="\2023\02a48c5aeb.html" title="即将跳转到外部网站，安全性未知"><span class="title">即将跳转到外部网站，安全性未知</span><span class="excerpt">避免在社交软件及网站统计中获取来路信息，保护隐私。</span></a><a class="item" href="\2023\028d076785.html" title="磁力网站收集分享"><span class="title">磁力网站收集分享</span><span class="excerpt">磁力网站分享</span></a><a class="item" href="\2023\05e99a24e0.html" title="蓝奏PJ软件库合集(持续更新)"><span class="title">蓝奏PJ软件库合集(持续更新)</span><span class="excerpt">蓝奏云是目前最好用的网盘之一，下载速度很快，不过限制文件最大100M，所以大多是用来分享软件和APP。</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="\2023\028d076785.html" title="磁力网站收集分享"><span class="title">磁力网站收集分享</span><span class="excerpt">磁力网站分享</span></a><a class="item" href="\2023\02a48c5aeb.html" title="即将跳转到外部网站，安全性未知"><span class="title">即将跳转到外部网站，安全性未知</span><span class="excerpt">避免在社交软件及网站统计中获取来路信息，保护隐私。</span></a><a class="item" href="\2023\05e99a24e0.html" title="蓝奏PJ软件库合集(持续更新)"><span class="title">蓝奏PJ软件库合集(持续更新)</span><span class="excerpt">蓝奏云是目前最好用的网盘之一，下载速度很快，不过限制文件最大100M，所以大多是用来分享软件和APP。</span></a></div></section></div>
 
 
 
@@ -508,5 +508,75 @@
     }
     show_runtime();
     </script>
-</body>
+<!-- hexo injector body_end start -->
+  <style>
+    .highlight {
+      position: relative;
+    }
+    .highlight .code .copy-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 4px 0.5rem;
+      opacity: 0.25;
+      font-weight: 700;
+      color: var(--theme);
+      cursor: pointer;
+      transination: opacity 0.3s;
+    }
+    .highlight .code .copy-btn:hover{
+      color: var(--text-code);
+      opacity: 0.75;
+    }
+    .highlight .code .copy-btn.success {
+      color: var(--swiper-theme-color);
+      opacity: 0.75;
+
+    }
+    
+  </style>
+  <script>
+    const codeElementArr = document.querySelectorAll('.code')
+    codeElementArr.forEach(code => {
+      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
+      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
+  
+      // copy btn 
+      const codeCopyBtn = document.createElement('div')
+      codeCopyBtn.classList.add('copy-btn')
+      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
+      codeCopyBtn.innerText = '复制代码'
+      code.appendChild(codeCopyBtn)
+  
+      codeCopyBtn.addEventListener('click', async () => {
+        const currentCodeElement = code.children[0]?.innerText
+        await copyCode(currentCodeElement)
+
+
+        codeCopyBtn.innerText = '复制成功'
+        codeCopyBtn.classList.add('success')
+
+        setTimeout(() => {
+          codeCopyBtn.innerText = '复制代码'
+          codeCopyBtn.classList.remove('success')
+        },1000)
+      })
+    })
+    
+    async function copyCode(currentCode) {
+      console.log(currentCode)
+      console.log('复制代码')
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(currentCode)
+        } catch (error) {
+          // 未获得用户许可
+          console.error(error)
+        }
+      } else {
+        console.error('当前浏览器不支持此api')
+      }
+    }
+  </script>
+  <!-- hexo injector body_end end --></body>
 </html>

@@ -2780,6 +2780,7 @@ details.folding[child=iframe] >div.body {
   border-radius: 12px;
   background: var(--theme-bg2);
   overflow: hidden;
+  border: 1px solid var(--theme-border);
   color: var(--text-p1);
 }
 .md-text .tag-plugin.note >.title {

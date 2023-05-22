@@ -9,6 +9,13 @@
 
 
     <url>
+        <loc>https://www.kuhehe.top/categories/tvbox/</loc>
+        <lastmod>2023-05-22T15:02:30.671Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://www.kuhehe.top/categories/%25E5%25BB%25BA%25E7%25AB%2599/</loc>
         <lastmod>2023-05-20T12:28:48.675Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -53,13 +60,6 @@
     <url>
         <loc>https://www.kuhehe.top/categories/%25E5%25A5%25BD%25E7%25AB%2599%25E5%2588%2586%25E4%25BA%25AB/</loc>
         <lastmod>2023-05-20T12:07:52.101Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/categories/tvbox/</loc>
-        <lastmod>2023-05-19T15:22:16.374Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

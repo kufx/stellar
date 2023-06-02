@@ -10,8 +10,8 @@
     
     
     <url>
-        <loc>https://www.kuhehe.top/about/</loc>
-        <lastmod>2023-05-24T15:11:51.761Z</lastmod>
+        <loc>https://www.kuhehe.top/dh/</loc>
+        <lastmod>2023-06-02T14:48:29.402Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
     </url>
@@ -19,8 +19,17 @@
     
     
     <url>
-        <loc>https://www.kuhehe.top/dh/</loc>
-        <lastmod>2023-05-22T14:57:24.559Z</lastmod>
+        <loc>https://www.kuhehe.top/jiexi/</loc>
+        <lastmod>2023-05-31T10:08:07.185Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://www.kuhehe.top/about/</loc>
+        <lastmod>2023-05-24T15:11:51.761Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
     </url>

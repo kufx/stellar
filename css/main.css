@@ -5303,7 +5303,7 @@ div#swiper_container {
   transition-delay: 1.7s;
 }
 .blog-slider__img {
-  width: auto;
+  width: 300px;
   flex-shrink: 0;
   height: 200px;
   padding: 10px;
@@ -5343,7 +5343,7 @@ div#swiper_container {
   text-align: left;
   color: var(--text-p3);
   margin-bottom: 10px;
-  display: none;
+  display: block;
   font-weight: 500;
 }
 .blog-slider__title {

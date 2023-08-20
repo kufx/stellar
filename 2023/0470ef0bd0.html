@@ -130,8 +130,6 @@
 
 <widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">stellar主题添加置顶轮播功能</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A2-%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89css"><span class="toc-number">1.</span> <span class="toc-text">💢 添加自定义css</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A2-%E4%BF%AE%E6%94%B9"><span class="toc-number">2.</span> <span class="toc-text">💢 修改 themes&#x2F;stellar&#x2F;layout&#x2F;_partial&#x2F;scripts&#x2F;index.ejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A2-%E4%BF%AE%E6%94%B9-1"><span class="toc-number">3.</span> <span class="toc-text">💢 修改 themes&#x2F;stellar&#x2F;layout&#x2F;index.ejs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A2-%E4%BF%AE%E6%94%B9-2"><span class="toc-number">4.</span> <span class="toc-text">💢 修改 themes&#x2F;stellar&#x2F;source&#x2F;js&#x2F;main.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A2-%E5%9C%A8%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%A6%82%E4%B8%8B%E9%85%8D%E7%BD%AE"><span class="toc-number">5.</span> <span class="toc-text">💢 在主题配置文件中添加如下配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A2-%E6%AD%A3%E5%BC%8F%E4%BD%BF%E7%94%A8"><span class="toc-number">6.</span> <span class="toc-text">💢 正式使用</span></a></li></ol></div></div></widget>
 
-<widget class="widget-wrapper timeline"><div class="widget-header cap theme dis-select"><span class="name">广告</span></div><div class="widget-body fs14"><div class="tag-plugin timeline stellar-timeline-api" api="https://api.github.com/repos/Kuhehe666/fx-issues/issues?labels=广告" hide="footer"></div></div></widget>
-
 
 
 
@@ -359,7 +357,7 @@
   stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
   // optional plugins
   if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"fade"});
   }
   if ('true' == 'true') {
     stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
@@ -373,7 +371,7 @@
 
 
   if ('false' == 'true') {
-    stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+    stellar.plugins.scrollreveal = Object.assign({"enable":false,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"10px","duration":500,"interval":100,"scale":1});
   }
   if ('true' == 'true') {
     stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});

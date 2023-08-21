@@ -5338,7 +5338,8 @@ div#swiper_container {
 }
 .blog-slider__code {
   text-align: left;
-  color: var(--text-p3);
+  font-size: 0.9375rem;
+  color: var(--text-p4);
   margin-bottom: 10px;
   display: block;
   font-weight: 500;
@@ -5371,7 +5372,7 @@ div#swiper_container {
 .blog-slider__button {
   display: inline-flex;
   background-color: var(--block);
-  padding: 14px 14px;
+  padding: 10px 10px;
   border-radius: 15px;
   color: var(--text-p1);
   text-decoration: none;
@@ -5382,7 +5383,7 @@ div#swiper_container {
   display: none;
 }
 .blog-slider__button:hover {
-  background-color: var(--block-hover);
+  background-color: #0ff;
 }
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets,
 .blog-slider .swiper-pagination-custom,
@@ -5410,13 +5411,13 @@ div#swiper_container {
   height: 11px;
   display: block;
   border-radius: 10px;
-  background: #858585;
+  background: #0f0;
   opacity: 0.2;
   transition: all 0.3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #1cd0fd;
+  background: #ffa500;
   height: 30px;
 }
 @media screen and (max-width: 600px) {
@@ -5439,9 +5440,10 @@ div#swiper_container {
   .blog-slider__button {
     display: inline-flex;
     width: 70%;
+    background: #87cefa;
   }
   .blog-slider__text {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .blog-slider {
     min-height: 350px;

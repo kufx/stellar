@@ -226,7 +226,7 @@
     
     
     <url>
-        <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/fonts/404.html</loc>
+        <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/css/404.html</loc>
         <lastmod>2023-03-05T02:40:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
@@ -235,7 +235,7 @@
     
     
     <url>
-        <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/css/404.html</loc>
+        <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/fonts/404.html</loc>
         <lastmod>2023-03-05T02:40:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
@@ -289,6 +289,15 @@
     
     
     <url>
+        <loc>https://www.kuhehe.top/jiexi1/assets/img/%25E4%25BD%25BF%25E7%2594%25A8%25E8%25AF%25B4%25E6%2598%258E.html</loc>
+        <lastmod>2023-01-08T03:13:46.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://www.kuhehe.top/jiexi1/assets/css/%25E4%25BD%25BF%25E7%2594%25A8%25E8%25AF%25B4%25E6%2598%258E.html</loc>
         <lastmod>2023-01-08T03:13:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -307,7 +316,7 @@
     
     
     <url>
-        <loc>https://www.kuhehe.top/jiexi1/assets/img/%25E4%25BD%25BF%25E7%2594%25A8%25E8%25AF%25B4%25E6%2598%258E.html</loc>
+        <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/css/%25E4%25BD%25BF%25E7%2594%25A8%25E8%25AF%25B4%25E6%2598%258E.html</loc>
         <lastmod>2023-01-08T03:13:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
@@ -317,15 +326,6 @@
     
     <url>
         <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/fonts/%25E4%25BD%25BF%25E7%2594%25A8%25E8%25AF%25B4%25E6%2598%258E.html</loc>
-        <lastmod>2023-01-08T03:13:46.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://www.kuhehe.top/jiexi1/assets/vendor/font-awesome/css/%25E4%25BD%25BF%25E7%2594%25A8%25E8%25AF%25B4%25E6%2598%258E.html</loc>
         <lastmod>2023-01-08T03:13:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>

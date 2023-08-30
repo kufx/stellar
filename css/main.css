@@ -5370,7 +5370,7 @@ div#swiper_container {
   word-wrap: break-word;
 }
 .blog-slider__button {
-  display: inline-flex;
+  display: none;
   background-color: var(--block);
   padding: 10px 10px;
   border-radius: 15px;
@@ -5380,10 +5380,9 @@ div#swiper_container {
   justify-content: center;
   text-align: center;
   letter-spacing: 1px;
-  display: none;
 }
 .blog-slider__button:hover {
-  background-color: #0ff;
+  background-color: var(--block-hover);
 }
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets,
 .blog-slider .swiper-pagination-custom,
@@ -5411,13 +5410,13 @@ div#swiper_container {
   height: 11px;
   display: block;
   border-radius: 10px;
-  background: #0f0;
+  background: #858585;
   opacity: 0.2;
   transition: all 0.3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #ffa500;
+  background: #1cd0fd;
   height: 30px;
 }
 @media screen and (max-width: 600px) {
@@ -5438,7 +5437,7 @@ div#swiper_container {
     width: 30px;
   }
   .blog-slider__button {
-    display: inline-flex;
+    display: none;
     width: 70%;
     background: #87cefa;
   }

@@ -70,6 +70,6 @@ Object.keys(safeGoFun).forEach((key) => {
 // not-check-link 是小波自己设计的约定类名class，用来排除不调用跳转方法的链接
 document.addEventListener("DOMContentLoaded", function () {
   window.NzcheckLink(
-    ".l_main a:not(.social-share-icon):not(.fancybox):not(.not-check-link)"
+    ".l_main a:not(.social-share-icon):not(.blog-slider):not(.fancybox):not(.not-check-link):not(.breadcrumb):not(.post-card):not(.title):not(.page-number)"
   );
 });

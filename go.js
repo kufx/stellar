@@ -74,9 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ".post a:not(.menu):not(.menu_id):not(.post-card):not(.social-share-icon):not(.fancybox):not(.not-check-link):not(.breadcrumb)"
   );
   window.NzcheckLink(
-    ".wiki_dir a:not(.social-share-icon):not(.fancybox):not(.not-check-link):not(.breadcrumb)"
-  );
-  window.NzcheckLink(
     ".wiki a:not(.social-share-icon):not(.fancybox):not(.not-check-link):not(.breadcrumb)"
   );
 });

@@ -5086,17 +5086,19 @@ h1.article-title {
   border-radius: 12px;
 }
 img.lazy {
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  -moz-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  -webkit-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, filter 0.28s ease-out;
+  -moz-transition: transform 0.5s ease-out, filter 0.28s ease-out;
+  -webkit-transition: transform 0.5s ease-out, filter 0.28s ease-out;
+  -o-transition: transform 0.5s ease-out, filter 0.28s ease-out;
 }
 img.lazy:not(.loaded) {
-  opacity: 0;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 img.lazy.loaded,
 img.lazy.error {
-  opacity: 1;
+  filter: none;
+  -webkit-filter: none;
 }
 .group-body .site-card .card-link>img {
   transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
@@ -5105,10 +5107,10 @@ img.lazy.error {
   -o-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
 }
 .group-body .user-card .card-link>img {
-  transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
-  -moz-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
-  -webkit-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
-  -o-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
+  -moz-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
+  -webkit-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
+  -o-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, filter 0.2s ease-out;
 }
 :root {
   --swiper-theme-color: #1cd0fd !important;

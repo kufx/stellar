@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://www.kuhehe.top/tags/%E8%B5%84%E6%BA%90/</loc>
+        <lastmod>2023-10-03T14:38:16.842Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6/</loc>
+        <lastmod>2023-10-03T14:38:16.842Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/</loc>
+        <lastmod>2023-10-03T14:30:47.174Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://www.kuhehe.top/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</loc>
         <lastmod>2023-09-29T15:42:00.832Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -40,20 +61,6 @@
     <url>
         <loc>https://www.kuhehe.top/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</loc>
         <lastmod>2023-09-28T06:10:23.940Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E8%B5%84%E6%BA%90/</loc>
-        <lastmod>2023-09-28T06:09:52.678Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6/</loc>
-        <lastmod>2023-09-28T06:09:52.678Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -117,13 +124,6 @@
     <url>
         <loc>https://www.kuhehe.top/tags/%E5%88%86%E4%BA%AB/</loc>
         <lastmod>2023-08-21T06:44:19.103Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E7%BD%91%E7%AB%99/</loc>
-        <lastmod>2023-08-20T01:58:42.349Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

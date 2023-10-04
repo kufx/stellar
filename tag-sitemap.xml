@@ -4,14 +4,56 @@
 
     <url>
         <loc>https://www.kuhehe.top/tags/%E8%B5%84%E6%BA%90/</loc>
-        <lastmod>2023-10-03T14:38:16.842Z</lastmod>
+        <lastmod>2023-10-04T16:45:43.033Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6/</loc>
-        <lastmod>2023-10-03T14:38:16.842Z</lastmod>
+        <lastmod>2023-10-04T16:45:43.033Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</loc>
+        <lastmod>2023-10-04T16:45:40.628Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E4%BB%93/</loc>
+        <lastmod>2023-10-04T15:15:37.822Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/tvbox/</loc>
+        <lastmod>2023-10-04T15:15:37.822Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E6%8E%A5%E5%8F%A3/</loc>
+        <lastmod>2023-10-04T15:15:37.822Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E8%B0%83%E6%9F%A5/</loc>
+        <lastmod>2023-10-04T15:08:49.469Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E5%85%AC%E5%91%8A/</loc>
+        <lastmod>2023-10-04T15:04:45.640Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -52,20 +94,6 @@
     </url>
 
     <url>
-        <loc>https://www.kuhehe.top/tags/%E8%B0%83%E6%9F%A5/</loc>
-        <lastmod>2023-09-28T06:11:30.597Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</loc>
-        <lastmod>2023-09-28T06:10:23.940Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://www.kuhehe.top/tags/%E9%98%BF%E9%87%8C%E8%B5%84%E6%BA%90/</loc>
         <lastmod>2023-09-28T06:06:44.598Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -75,13 +103,6 @@
     <url>
         <loc>https://www.kuhehe.top/tags/%E7%BD%91%E7%9B%98/</loc>
         <lastmod>2023-09-28T06:06:44.598Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E5%85%AC%E5%91%8A/</loc>
-        <lastmod>2023-09-28T05:46:53.559Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -145,27 +166,6 @@
     <url>
         <loc>https://www.kuhehe.top/tags/API/</loc>
         <lastmod>2023-07-18T06:17:28.607Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E4%BB%93/</loc>
-        <lastmod>2023-07-17T08:25:31.014Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/tvbox/</loc>
-        <lastmod>2023-07-17T08:25:31.014Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E6%8E%A5%E5%8F%A3/</loc>
-        <lastmod>2023-07-17T08:25:31.014Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

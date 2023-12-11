@@ -4,35 +4,56 @@
 
     <url>
         <loc>https://www.kuhehe.top/tags/%E5%85%AC%E5%91%8A/</loc>
-        <lastmod>2023-12-10T12:23:23.162Z</lastmod>
+        <lastmod>2023-12-11T15:05:13.928Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E8%B5%84%E6%BA%90/</loc>
+        <lastmod>2023-12-11T15:04:35.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6/</loc>
+        <lastmod>2023-12-11T15:04:35.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://www.kuhehe.top/tags/%E7%A0%B4%E8%A7%A3%E8%BD%AF%E4%BB%B6/</loc>
-        <lastmod>2023-12-04T10:50:03.792Z</lastmod>
+        <lastmod>2023-12-11T15:03:41.579Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kuhehe.top/tags/%E5%88%86%E4%BA%AB/</loc>
+        <lastmod>2023-12-11T15:03:08.822Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://www.kuhehe.top/tags/office%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
-        <lastmod>2023-11-25T15:15:57.572Z</lastmod>
+        <lastmod>2023-12-11T15:02:26.460Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://www.kuhehe.top/tags/Word/</loc>
-        <lastmod>2023-11-25T15:15:57.572Z</lastmod>
+        <lastmod>2023-12-11T15:02:26.460Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://www.kuhehe.top/tags/Excel/</loc>
-        <lastmod>2023-11-25T15:15:57.572Z</lastmod>
+        <lastmod>2023-12-11T15:02:26.460Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -54,27 +75,6 @@
     <url>
         <loc>https://www.kuhehe.top/tags/%E6%8A%95%E7%A8%BF/</loc>
         <lastmod>2023-11-23T11:41:23.773Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E8%B5%84%E6%BA%90/</loc>
-        <lastmod>2023-10-27T11:20:16.896Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6/</loc>
-        <lastmod>2023-10-27T11:20:16.896Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kuhehe.top/tags/%E5%88%86%E4%BA%AB/</loc>
-        <lastmod>2023-10-05T09:48:52.443Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

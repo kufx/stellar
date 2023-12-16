@@ -3512,6 +3512,22 @@ details.folding[child=iframe] >div.body {
   margin: 0.5rem 0;
   line-height: 1.2;
 }
+.tag-plugin.timeline.stellar-memos-api .body p:first-child {
+  margin-top: 2px;
+}
+.tag-plugin.timeline.stellar-memos-api .body p:last-child {
+  margin-bottom: 2px;
+}
+.tag-plugin.timeline.stellar-memos-api .body img {
+  margin: 0;
+  max-height: 128px;
+}
+.tag-plugin.timeline.stellar-memos-api .body .tag-plugin.image {
+  display: flex;
+}
+.tag-plugin.timeline.stellar-memos-api .body .tag-plugin.image .image-bg+.image-bg {
+  margin-left: 4px;
+}
 details.toc {
   background: var(--block);
   border: 1px solid var(--block-border);

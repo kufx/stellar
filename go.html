@@ -8,9 +8,9 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>
-      安全中心 | 酷小呵 - 爱分享好东西.分享简单快乐感悟短暂人生
+      安全中心 | 博客名称 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐
     </title>
-    <link rel="icon" class="icon-favicon" href="https://q1.qlogo.cn/g?b=qq&nk=3111349763&s=100" />
+    <link rel="icon" class="icon-favicon" href="/" />
     <link
       rel="stylesheet"
       href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
@@ -409,8 +409,7 @@
         <div class="flex-box">
           <div class="flex-contain">
             <div class="logo-img">
-              <p class="blog-name">酷小呵爱分享</p>
-              阅读: <span id="busuanzi_value_page_pv">🔥</span> 🔥
+              <p class="blog-name">博客名称</p>
               <p class="blog-description"></p>
             </div>
 
@@ -424,8 +423,8 @@
           </div>
           <div class="footer flex-footer">
             ©2011-2023
-            <a href="http://www.baidu.com/s?wd=%E9%85%B7%E5%B0%8F%E5%91%B5" class="blog-name"
-              ><span>酷小呵</span></a
+            <a href="https://blog.ganxb2.com" class="blog-name"
+              ><span>博客名称</span></a
             >
             版权所有
             <!-- <span class="blog-name">廿壴(ganxb2)</span> 版权所有 -->
@@ -436,22 +435,21 @@
     <!-- goPage end -->
 
     <script src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
     <script type="module">
       // 请根据自己博客修改
       const config = {
         // 标题
         title:
-          "酷小呵安全中心 | 网客互动分享宇宙 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
+          "廿壴(ganxb2)安全中心 | 廿壴(ganxb2)网客互动分享宇宙 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
         // 地址栏图标
         iconFavicon: "https://blog.ganxb2.com/img/favicon.ico",
         // 二维码地址
         mpImgSrc: "/img/wxgzh.webp",
         // 博客名称
-        blogName: "百度搜索：酷小呵",
+        blogName: "廿壴博客",
         // 博客描述
-        blogDescription: "",
+        blogDescription: "探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
         // 白名单
         safeUrl: [
           // 平台 常用平台不用改哈
@@ -473,19 +471,18 @@
           "jinrishici.com",
           "hitokoto.cn",
           "zhangxinxu.com",
-          "feishu.cn",
 
           // 好友博客 增加自己的博客友链
         ],
-        tipsTextError: "链接错误，关闭页面返回酷小呵(kuhehe)",
+        tipsTextError: "链接错误，关闭页面返回廿壴(ganxb2)",
         tipsTextDownload:
           // "从廿壴(ganxb2)微信公众号获取暗号≖‿≖✧ o‿≖✧(๑•̀ㅂ•́)و✧",
-          "(๑•̀ㅂ•́)و✧“酷小呵”微信公众号关注走一波o‿≖✧",
+          "(๑•̀ㅂ•́)و✧“廿壴博客”微信公众号关注走一波o‿≖✧",
         tipsTextDanger: "该网址未在确认的安全范围内",
         tipsTextSuccess: "该网址在确认的安全范围内",
         textDanger:
-          "您即将离开酷小呵博客去往如下网址，请注意您的账号隐私安全和财产安全：",
-        textSuccess: "您即将离开酷小呵博客去往如下网址",
+          "您即将离开廿壴博客去往如下网址，请注意您的账号隐私安全和财产安全：",
+        textSuccess: "您即将离开廿壴博客去往如下网址",
         // 后续改成leancloud获取(下载验证码)
         wpValidate: "9498",
       };
@@ -668,10 +665,10 @@
             <span
               >${tplConfig.loadingTopicText}</span
             >
-            <a class="${tplConfig.loadingColorType} go-url" rel="noopener external nofollow noreferrer" target="_blank">${tplConfig.goUrl}</a>
+            <a class="${tplConfig.loadingColorType} go-url">${tplConfig.goUrl}</a>
           </div>
           <div class="flex-end">
-            <a class="loading-btn go-url-btn" rel="noopener external nofollow noreferrer" href="${tplConfig.goUrl}" target="_self">继续</a>
+            <a rel="noopener external nofollow noreferrer" class="loading-btn go-url-btn" href="${tplConfig.goUrl}" target="_self">继续</a>
           </div>
         `;
 
@@ -682,7 +679,7 @@
                 <img class="mp-img" src="${config.mpImgSrc}" alt="qrcode" />
                 <p>
                   长按二维码直接识别公众号或长按二维码保存后微信扫描<br>
-									公众号更简单发现更多好玩有趣 ≖‿≖✧
+                  公众号更简单发现更多好玩有趣 ≖‿≖✧
                 </p>
               </div>
               <div>
@@ -698,7 +695,7 @@
                     <input type="text" class="form-control hidden" />
                   </div>
                 </form>
-                <a href="${tplConfig.goUrl}" class="go-down-url hidden" target="_self" tittle="go-url"></a>
+                <a rel="noopener external nofollow noreferrer" href="${tplConfig.goUrl}" class="go-down-url hidden" target="_self" tittle="go-url"></a>
               </div>
             </div>
           </div>

@@ -3,22 +3,11 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>
-      安全中心 | 博客名称 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>安全中心 | 酷小呵博客 - 爱分享的酷小呵</title>
     <link rel="icon" class="icon-favicon" href="/" />
-    <link
-      rel="stylesheet"
-      href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://at.alicdn.com/t/font_1736178_lbnruvf0jn.css"
-    />
+    <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style type="text/css">
       /* // 向上渐隐显示(主内容使用) */
       @-webkit-keyframes fadeInUp {
@@ -260,7 +249,7 @@
         font-weight: 600;
         color: #222226;
         line-height: 22px;
-        /* margin-left: 12px; */
+        margin-left: 12px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -271,7 +260,9 @@
       }
       .content .flex-end {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 15px;
       }
       /* #267dcc 蓝色 */
       .content .loading-color1 {
@@ -401,33 +392,28 @@
   </head>
   <body class="web-font">
     <div id="goPage" class="go-page">
-      <div class="alert alert-danger go-alert hidden" role="alert">
-        验证失败
-      </div>
+      <div class="alert alert-danger go-alert hidden" role="alert">验证失败</div>
 
       <div class="content">
         <div class="flex-box">
           <div class="flex-contain">
             <div class="logo-img">
-              <p class="blog-name">博客名称</p>
+              <p class="blog-name">酷小呵博客</p>
               <p class="blog-description"></p>
             </div>
 
             <!-- 加载ing... -->
             <div class="loading-item loading-safe flex">
-              <i class="iconfont icon-snapchat-fill"></i>
+              <i class="fa-solid fa-shield fa-flip fa-xl"></i>
               <div class="loading-text">链接安全性检验中 请稍后...</div>
             </div>
 
             <div class="go-box"></div>
           </div>
           <div class="footer flex-footer">
-            ©2011-2023
-            <a href="https://blog.ganxb2.com" class="blog-name"
-              ><span>博客名称</span></a
-            >
+            ©2020-2024
+            <a href="https://www.kuhehe.top" class="blog-name"><span>酷小呵博客</span></a>
             版权所有
-            <!-- <span class="blog-name">廿壴(ganxb2)</span> 版权所有 -->
           </div>
         </div>
       </div>
@@ -441,52 +427,55 @@
       const config = {
         // 标题
         title:
-          "廿壴(ganxb2)安全中心 | 廿壴(ganxb2)网客互动分享宇宙 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
+          "安全中心 - 酷小呵博客",
         // 地址栏图标
-        iconFavicon: "https://blog.ganxb2.com/img/favicon.ico",
+        iconFavicon: "https://img.yywen.top/hy-blog/medias/icon/favicon-32x32.png",
         // 二维码地址
-        mpImgSrc: "/img/wxgzh.webp",
+        mpImgSrc: "https://bu.dusays.com/2024/03/17/65f6dabeb59ca.jpg",
         // 博客名称
-        blogName: "廿壴博客",
+        blogName: "酷小呵博客",
         // 博客描述
-        blogDescription: "探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
+        blogDescription: "爱分享的酷小呵",
         // 白名单
         safeUrl: [
           // 平台 常用平台不用改哈
+          "yywen.top",
+          "bilibili.com",
+          "baike.baidu.com",
+          "csdn.net",
+          "douban.com",
+          "developer.mozilla.org",
+          "foreverblog.cn",
           "github.com",
           "gitee.com",
-          "csdn.net",
-          "zhihu.com",
-          "pan.baidu.com",
-          "baike.baidu.com",
+          "gov.cn",
+          "geekbang.org",
           "hexo.io",
+          "hitokoto.cn",
+          "jsdelivr.com",
+          "jinrishici.com",
           "leancloud.cn",
           "nodejs.cn",
-          "jsdelivr.com",
-          "ohmyposh.dev",
           "nerdfonts.com",
-          "douban.com",
+          "ohmyposh.dev",
+          "pan.baidu.com",
+          "volantis.js.org",
           "waline.js.org",
-          "developer.mozilla.org",
-          "jinrishici.com",
-          "hitokoto.cn",
+          "zhihu.com",
           "zhangxinxu.com",
-
           // 好友博客 增加自己的博客友链
+          "www.kuhehe.top",
+          "kuhehe.github.io",
         ],
-        tipsTextError: "链接错误，关闭页面返回廿壴(ganxb2)",
-        tipsTextDownload:
-          // "从廿壴(ganxb2)微信公众号获取暗号≖‿≖✧ o‿≖✧(๑•̀ㅂ•́)و✧",
-          "(๑•̀ㅂ•́)و✧“廿壴博客”微信公众号关注走一波o‿≖✧",
-        tipsTextDanger: "该网址未在确认的安全范围内",
-        tipsTextSuccess: "该网址在确认的安全范围内",
-        textDanger:
-          "您即将离开廿壴博客去往如下网址，请注意您的账号隐私安全和财产安全：",
-        textSuccess: "您即将离开廿壴博客去往如下网址",
-        // 后续改成leancloud获取(下载验证码)
-        wpValidate: "9498",
+        tipsTextError: "链接错误，即将关闭当前页面",
+        tipsTextDanger: "第三方网站跳转提醒",
+        tipsTextSuccess: "校验通过，安全跳转中...",
+        textDanger: "您即将离开酷小呵的博客前往如下网址，请您谨慎甄别，注意账号隐私和财产安全：",
+        textSuccess: "您即将离开酷小呵的博客，前往第三方网站：",
+        closeErrorTime: 10,
+        closeDangerTime: 120,
       };
-
+      
       // 获取地址和下载标识
       const getQueryString = (name, type) => {
         // 构造一个含有目标参数的正则表达式对象
@@ -507,6 +496,15 @@
         }
         return null;
       };
+
+      const isValidUrl = (url) => {
+        try {
+          new URL(url);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
 
       // xss攻击（绑定值时使用）
       const xssCheck = (str, reg) => {
@@ -530,54 +528,8 @@
           : "";
       };
 
-      // 下载按钮点击验证，成功回调把linkUrl绑定给隐藏的a标签模拟点击
-      const downloadValidate = (config, getLinkUrl) => {
-        // 下载按钮，下载地址，验证码，警告框
-        const downloadBtn = document.querySelector(".go-down-btn"),
-          downloadUrl = document.querySelector(".go-down-url"),
-          wpValidate = document.querySelector(".wp-validate"),
-          goAlert = document.querySelector(".go-alert");
-
-        downloadBtn.addEventListener(
-          "click",
-          function () {
-            // 显示alert
-            goAlert.classList.remove("hidden", "alertFadeInUp");
-            setTimeout(() => {
-              goAlert.classList.add("alertFadeInUp");
-            }, 300);
-            // 暂时给默认值下载后续再改动
-            wpValidate.value = "9498";
-            // leancloud回调(node环境则可以利用主机环境变量传入leancloud的参数)
-            if (
-              wpValidate &&
-              wpValidate.value !== "" &&
-              wpValidate.value === config.wpValidate
-            ) {
-              // 成功
-              wpValidate.classList.remove("is-invalid");
-              wpValidate.classList.add("is-valid");
-              goAlert.classList.remove("alert-danger");
-              goAlert.classList.add("alert-success");
-              goAlert.textContent = "验证成功";
-              downloadUrl.click();
-            } else {
-              // 失败
-              wpValidate.classList.remove("is-valid");
-              wpValidate.classList.add("is-invalid");
-              goAlert.classList.remove("alert-success");
-              goAlert.classList.add("alert-danger");
-              goAlert.textContent = "验证失败";
-            }
-          },
-          !1
-        );
-        // !1 false 冒泡 是点击子元素，子元素事件先出现在出现父元素事件
-        // 1 true 捕获 是点击子元素，父元素事件先出现在出现子元素事件
-      };
-
-      // 其他地址校验白名单
-      const othersValidate = (config, getLinkUrl) => {
+      // 校验白名单
+      const Validate = (config, getLinkUrl) => {
         let isSafeUrl = false,
           safeUrl = config.safeUrl,
           url = xssCheck(getLinkUrl.url);
@@ -594,9 +546,21 @@
         return isSafeUrl;
       };
 
+      const startCountdown = (time) => {
+        var countdownInterval = setInterval(function() {
+          $('#remainingTime').text(time);
+          time--;
+          if (time < 0) {
+            clearInterval(countdownInterval);
+            $('#tipsText').text('因浏览器安全策略导致无法自动关闭');
+            $('#timeTip').text('请您手动关闭');
+            window.close();
+          }
+        }, 1000);
+      }
       // 模版基础配置初始
       const goInit = (config) => {
-        // $(function () {
+        const safeIcon = `<svg t="1705570083729" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4235" width="26" height="26"><path d="M926 215.173333l-384-170.666666a21.333333 21.333333 0 0 0-17.333333 0l-384 170.666666A21.333333 21.333333 0 0 0 128 234.666667v217.813333c0 219.866667 129.373333 419.02 329.6 507.333333 32.793333 14.466667 57.566667 21.5 75.733333 21.5s42.94-7.033333 75.733334-21.5c200.226667-88.333333 329.6-287.486667 329.6-507.333333V234.666667a21.333333 21.333333 0 0 0-12.666667-19.493334z m-206.913333 205.246667l-213.333334 213.333333a21.333333 21.333333 0 0 1-30.173333 0l-128-128a21.333333 21.333333 0 0 1 30.173333-30.173333L490.666667 588.5l198.246666-198.253333a21.333333 21.333333 0 1 1 30.173334 30.173333z" fill="#34A3FF" p-id="4236" data-spm-anchor-id="a313x.search_index.0.i0.3f6a3a81Nseabr" class="selected"></path></svg>`
         const tplConfig = {
             loadingType: "loading-error",
             tipType: "tip3",
@@ -622,12 +586,11 @@
         blogDescription.textContent = config.blogDescription;
 
         // 根据地址栏参数判断是下载地址还是纯外链，外链则直接修改a标签按钮url，用户点击跳转
-        if (getLinkUrl && !getLinkUrl.isDownload) {
+        if (getLinkUrl && isValidUrl(getLinkUrl.url)) {
           // 可参考csdn加入后端请求验证地址是否白名单再进一步给出不同场景状态：是白名单，则绿+蓝，否则黄+红
-          const isSafeUrl = othersValidate(config, getLinkUrl);
+          const isSafeUrl = Validate(config, getLinkUrl);
           tplConfig.loadingType = "loading-others";
           tplConfig.goUrl = xssCheck(getLinkUrl.url);
-
           if (isSafeUrl) {
             tplConfig.tipType = "tip1";
             tplConfig.tipsText = config.tipsTextSuccess;
@@ -635,113 +598,69 @@
             tplConfig.loadingColorType = "loading-color1";
             // 白名单链接直接跳转
             setTimeout(() => {
-              // location.assign(tplConfig.goUrl);
               const goUrlBtn = document.querySelector(".go-url-btn");
               goUrlBtn.click();
             }, 2000);
-            // location.reload();
-            // location.replace();
           } else {
             tplConfig.tipType = "tip2";
             tplConfig.tipsText = config.tipsTextDanger;
             tplConfig.loadingTopicText = config.textDanger;
             tplConfig.loadingColorType = "loading-color2";
+            startCountdown(config.closeDangerTime);
           }
         }
-        // 如果是下载则按钮事件绑定leancloud请求校验验证码
-        else if (getLinkUrl && getLinkUrl.isDownload) {
-          tplConfig.loadingType = "loading-download";
-          tplConfig.goUrl = xssCheck(getLinkUrl.url);
-          tplConfig.tipType = "tip1";
-          tplConfig.tipsText = config.tipsTextDownload;
-        } else {
-          // 错误
-          tplConfig.tipType = "tip2";
+        else {
+          // Url获取失败或者校验错误
+          tplConfig.tipType = "tip3";
           tplConfig.tipsText = config.tipsTextError;
+          startCountdown(config.closeErrorTime);
         }
-
-        const othersTpl = `
+        
+        const sucessbtn = `<div class="flex-end"><span></span><a rel="noopener external nofollow noreferrer" class="loading-btn go-url-btn" href="${tplConfig.goUrl}" target="_self">继续前往</a></div>`;
+        const dangerbtn = `       
+          <div class="flex-end">
+            <div id="timeTip">此页面将在 <span id="remainingTime">120</span> 秒后关闭</div>
+            <a rel="noopener external nofollow noreferrer" class="loading-btn go-url-btn" href="${tplConfig.goUrl}" target="_self">继续前往</a></div>
+          </div>`;
+        const errorbtn = `
+          <div class="flex-end">
+            <div id="timeTip">将在 <span id="remainingTime">10</span> 秒后关闭</div>
+              <a class="loading-btn go-url-btn" href="https://www.kuhehe.top/" target="_self">返回酷小呵博客（kuhehe.top）</a>
+          </div>`;
+        
+        const textbody = `
           <div class="loading-topic">
-            <span
-              >${tplConfig.loadingTopicText}</span
-            >
+            <span>${tplConfig.loadingTopicText}</span>
             <a class="${tplConfig.loadingColorType} go-url">${tplConfig.goUrl}</a>
           </div>
-          <div class="flex-end">
-            <a rel="noopener external nofollow noreferrer" class="loading-btn go-url-btn" href="${tplConfig.goUrl}" target="_self">继续</a>
-          </div>
+          ${
+            tplConfig.tipType === "tip1"
+              ? `${sucessbtn}`: tplConfig.tipType === "tip2"
+              ? `${dangerbtn}`: `${errorbtn}`
+          }
         `;
-
-        const downloadTpl = `
-          <div class="loading-topic">
-            <div class="flex">
-              <div class="mp-img-box">
-                <img class="mp-img" src="${config.mpImgSrc}" alt="qrcode" />
-                <p>
-                  长按二维码直接识别公众号或长按二维码保存后微信扫描<br>
-                  公众号更简单发现更多好玩有趣 ≖‿≖✧
-                </p>
-              </div>
-              <div>
-                <form class="needs-validation form-inline">
-                  <div class="form-group">
-                    <label class="sr-only" for="wp-validate">验证码</label>
-                    <input
-                      type="text"
-                      class="form-control wp-validate hidden"
-                      id="wp-validate"
-                      placeholder="请输入公众号验证码..."
-                    />
-                    <input type="text" class="form-control hidden" />
-                  </div>
-                </form>
-                <a rel="noopener external nofollow noreferrer" href="${tplConfig.goUrl}" class="go-down-url hidden" target="_self" tittle="go-url"></a>
-              </div>
-            </div>
-          </div>
-          <div class="flex-end">
-            <a
-              class="loading-btn go-down-btn"
-              href="javascript:void(0);"
-              target="_self"
-              >下载</a
-            >
-          </div>
-        `;
-
         const tpl = `
           <div class="loading-item ${tplConfig.loadingType} hidden">
             <div class="flex loading-tip ${tplConfig.tipType}">
-              <i class="iconfont icon-snapchat-fill ${
-                tplConfig.loadingType === "loading-download" && "hidden"
-              }"></i>
-              <div class="loading-text">
-                ${tplConfig.tipsText}
-              </div>
+              ${
+                tplConfig.tipType === "tip1"
+                  ? `${safeIcon}`
+                  : tplConfig.tipType === "tip2"
+                  ? `<i class="fa-solid fa-shield-halved fa-xl" style="color: #FC5531;"></i>`
+                  : `<i class="fa-solid fa-circle-xmark fa-shake fa-xl" style="color: #e60a0a;"></i>`
+              }
+              <div class="loading-text" id="tipsText">${tplConfig.tipsText}</div>
             </div>
-            ${
-              tplConfig.loadingType === "loading-others"
-                ? othersTpl
-                : tplConfig.loadingType === "loading-download"
-                ? downloadTpl
-                : ""
-            }
+            ${ tplConfig.loadingType === "loading-others" ? textbody : errorbtn}
           </div>
         `;
-
         // tpl渲染
         goBox.innerHTML = tpl;
         const loadingItem = document.querySelector(".go-box .loading-item");
         loadingSafe.classList.add("fadeOutUp", "fade-animate");
         loadingItem.classList.remove("hidden");
         loadingItem.classList.add("fadeInUp", "fade-animate");
-        // 下载按钮事件绑定
-        if (getLinkUrl && getLinkUrl.isDownload)
-          downloadValidate(config, getLinkUrl);
-        // });
       };
-
-      // -----------------------调用 start 栗子：?goUrl=https%3A%2F%2Fimgod.me&type=goDown
       goInit(config);
     </script>
   </body>

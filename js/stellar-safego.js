@@ -55,5 +55,5 @@ Object.keys(safeGoFun).forEach((key) => {
 });
 // 页面加载完成调用 NzcheckLink 函数
 document.addEventListener("DOMContentLoaded", function () {
-    window.NzcheckLink("#start a:not(.not-check-link):not(.fancybox)");
+    window.NzcheckLink("#start a:not(.not-check-link):not(.fancybox):not(.footer)");
 });

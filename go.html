@@ -1,669 +1,240 @@
 <!DOCTYPE html>
-<html data-user-color-scheme="dark">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>安全中心 | 酷小呵博客 - 爱分享的酷小呵</title>
-    <link rel="icon" class="icon-favicon" href="/" />
-    <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<html lang="zh">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow"/>
+    <title>页面加载中，请稍候...</title>
     <style type="text/css">
-      /* // 向上渐隐显示(主内容使用) */
-      @-webkit-keyframes fadeInUp {
-        0% {
-          opacity: 0;
-          transform: translateY(24px);
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            flex-direction: column;
         }
-        100% {
-          opacity: 1;
-          transform: translateY(-80px);
+        .avatar-placeholder, .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            display: block;
         }
-      }
-      @keyframes fadeInUp {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(24px);
-          -ms-transform: translateY(24px);
-          transform: translateY(24px);
+        .avatar {
+            display: none;
         }
-        100% {
-          opacity: 1;
-          -webkit-transform: translateY(-80px);
-          -ms-transform: translateY(-80px);
-          transform: translateY(-80px);
+        .description {
+            font-size: 18px;
         }
-      }
-      /* // 向上渐隐显示(成功错误提示) */
-      @-webkit-keyframes alertFadeInUp {
-        0% {
-          opacity: 0;
-          transform: translateY(24px);
+        .subtitle {
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #C4C4C4;
         }
-        75% {
-          opacity: 1;
-          transform: translateY(0);
+        .loading {
+            text-align: center;
+            padding: 30px;
+            border-radius: 18px;
+            animation: fadein 2s;
+            width: 400px;
+            max-width: 90%;
         }
-        100% {
-          opacity: 0;
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-      }
-      @keyframes alertFadeInUp {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateY(24px);
-          -ms-transform: translateY(24px);
-          transform: translateY(24px);
-        }
-        75% {
-          opacity: 1;
-          -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-          transform: translateY(0);
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-webkit-keyframes fadeOutUp {
-        0% {
-          opacity: 1;
-        }
-        to {
-          opacity: 0;
-          transform: translate3d(0, -350%, 0);
-        }
-      }
-      @keyframes fadeOutUp {
-        0% {
-          opacity: 1;
-        }
-        to {
-          opacity: 0;
-          -webkit-transform: translate3d(0, -350%, 0);
-          transform: translate3d(0, -350%, 0);
-        }
-      }
-
-      :root {
-        --blue: #007bff;
-        --indigo: #6610f2;
-        --purple: #6f42c1;
-        --pink: #e83e8c;
-        --red: #dc3545;
-        --orange: #fd7e14;
-        --yellow: #ffc107;
-        --green: #28a745;
-        --teal: #20c997;
-        --cyan: #17a2b8;
-        --white: #fff;
-        --gray: #6c757d;
-        --gray-dark: #343a40;
-        --primary: #007bff;
-        --secondary: #6c757d;
-        --success: #28a745;
-        --info: #17a2b8;
-        --warning: #ffc107;
-        --danger: #dc3545;
-        --light: #f8f9fa;
-        --dark: #343a40;
-        --breakpoint-xs: 0;
-        --breakpoint-sm: 576px;
-        --breakpoint-md: 768px;
-        --breakpoint-lg: 992px;
-        --breakpoint-xl: 1200px;
-        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-          "PingFang SC", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-          "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol", "Noto Color Emoji";
-        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
-      }
-
-      [data-user-color-scheme="dark"] {
-        --body-bg-color: #22272e;
-        --board-bg-color: #2b313a;
-        --text-color: #adbac7;
-        --sec-text-color: #b3bac1;
-        --post-text-color: #adbac7;
-        --post-heading-color: #adbac7;
-        --post-link-color: #34a3ff;
-        --link-hover-color: #30a9de;
-        --link-hover-bg-color: #22272e;
-        --line-color: #adbac7;
-        --navbar-bg-color: #22272e;
-        --navbar-text-color: #cbd4dc;
-        --subtitle-color: #cbd4dc;
-        --scrollbar-color: #30a9de;
-        --scrollbar-hover-color: #34a3ff;
-        --button-bg-color: transparent;
-        --button-hover-bg-color: #46647e;
-        --highlight-bg-color: #2d333b;
-        --inlinecode-bg-color: rgba(99, 110, 123, 0.4);
-      }
-      ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-      }
-      ::-webkit-scrollbar-corner {
-        background-color: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: var(--scrollbar-color);
-        border-radius: 6px;
-      }
-
-      html {
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
-      }
-      html,
-      body {
-        /* background: #f3f4f5; */
-        /* font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei,
-          Verdana, Roboto, Noto, Helvetica Neue, sans-serif; */
-        font-family: var(--font-family-sans-serif);
-        padding: 0;
-        margin: 0;
-        background-color: var(--body-bg-color);
-        color: var(--text-color);
-        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-        height: 100%;
-      }
-      body {
-        font-size: 1rem;
-      }
-      p,
-      div {
-        padding: 0;
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-      }
-      body a:hover {
-        color: var(--link-hover-color);
-        text-decoration: none;
-      }
-      .go-page {
-        height: 100%;
-      }
-      .content {
-        /* padding-top: 220px; */
-        width: 450px;
-        margin: auto;
-        word-break: break-all;
-        height: 100%;
-      }
-      .content .logo-img {
-        margin-bottom: 20px;
-        text-align: center;
-        padding-top: 220px;
-      }
-      .content .logo-img p:first-child {
-        font-size: 22px;
-      }
-      .content .logo-img img {
-        display: block;
-        width: 175px;
-        height: 48px;
-        margin: auto;
-        margin-bottom: 16px;
-      }
-
-      .content .loading-item {
-        background: #fff;
-        padding: 24px;
-        border-radius: 12px;
-        border: 1px solid #e1e1e1;
-        margin-bottom: 10px;
-      }
-      /* 绿色 */
-      .content .tip1 {
-        background: #f0f9ea;
-      }
-      /* 黄色 */
-      .content .tip2 {
-        background: #fdf5e6;
-      }
-      /* 红色 */
-      .content .tip3 {
-        background: #fef0f0;
-      }
-      .content .icon-snapchat-fill {
-        font-size: 20px;
-        color: #fc5531;
-        border: 1px solid #fc5531;
-        border-radius: 50%;
-        width: 32px;
-        text-align: center;
-        margin-right: 5px;
-      }
-      .content .tip1 .icon-snapchat-fill {
-        color: var(--post-link-color);
-        border-color: var(--post-link-color);
-      }
-      .content .loading-text {
-        font-size: 16px;
-        font-weight: 600;
-        color: #222226;
-        line-height: 22px;
-        margin-left: 12px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-      .content .flex {
-        display: flex;
-        align-items: center;
-      }
-      .content .flex-end {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        margin: 0 15px;
-      }
-      /* #267dcc 蓝色 */
-      .content .loading-color1 {
-        color: var(--post-link-color);
-      }
-      .content .loading-color2 {
-        color: #fc5531;
-      }
-      .content .loading-tip {
-        padding: 12px;
-        margin-bottom: 16px;
-        border-radius: 4px;
-      }
-      .content .loading-topic {
-        font-size: 14px;
-        color: #222226;
-        line-height: 24px;
-        margin-bottom: 24px;
-      }
-      .loading-topic .flex {
-        flex-direction: column;
-      }
-      .content .loading-img {
-        width: 24px;
-        height: 24px;
-      }
-      /* #fc5531; #fc5531*/
-      .content .loading-btn {
-        font-size: 14px;
-        color: var(--post-link-color);
-        border: 1px solid var(--post-link-color);
-        display: inline-block;
-        box-sizing: border-box;
-        padding: 6px 18px;
-        border-radius: 18px;
-        margin-left: 8px;
-      }
-      .content .loading-btn:hover {
-        color: var(--link-hover-color);
-        border-color: var(--link-hover-color);
-      }
-      .content .loading-btn-github {
-        width: 121px;
-        background: #fc5531;
-        color: #fff;
-      }
-
-      .hidden {
-        display: none;
-      }
-      .form-control.hidden {
-        display: none !important;
-      }
-      .mp-img-box {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      .mp-img {
-        max-width: 400px;
-        width: 100%;
-        box-shadow: 5px 5px 15px rgb(0 0 0 / 8%);
-        margin-bottom: 5px;
-      }
-      .fadeInUp {
-        -webkit-animation-name: fadeInUp;
-        animation-name: fadeInUp;
-      }
-      .alertFadeInUp {
-        -webkit-animation-name: alertFadeInUp;
-        animation-name: alertFadeInUp;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-      }
-      .fadeOutUp {
-        -webkit-animation-name: fadeOutUp;
-        animation-name: fadeOutUp;
-      }
-      .fade-animate {
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-      }
-      .go-alert {
-        margin: 0 auto;
-        width: 110px;
-        position: absolute;
-        left: 46%;
-        top: 5%;
-        opacity: 0;
-        text-align: center;
-      }
-      .footer {
-        text-align: center;
-        position: relative;
-        margin-bottom: 20px;
-      }
-      .footer a {
-        color: var(--text-color);
-      }
-
-      .flex-box {
-        display: flex;
-        height: 100vh;
-        flex-direction: column;
-      }
-      .flex-contain {
-        flex: 1;
-      }
-      .flex-footer {
-        height: 24px;
-      }
-
-      @media (max-width: 767.98px) {
         .content {
-          width: 94%;
+            margin-bottom: 20px;
         }
-        .content .logo-img {
-          padding-top: 120px;
+        .url-text {
+            margin-bottom: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
         }
-      }
+        .jump-url {
+            font-size: 20px;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 8px;
+            height: 25px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .countdown-text {
+            margin-top: 12px;
+            font-size: 12px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20%;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 120px;
+            height: 40px;
+        }
+        .cancel-button {
+            color: black;
+        }
+        .confirm-button {
+            color: white;
+        }
+        .progress-bar {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 10px;
+            margin-top: 20px;
+        }
+        .progress {
+            width: 100%;
+            height: 100%;
+            transition: width 1s;
+        }
+
+        
+
+        
+        body {
+            background: linear-gradient(135deg, #fce38a, #eaffd0);
+        }
+        .loading {
+            background: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .url-text {
+            color: #333;
+        }
+        .jump-url {
+            border: 1px solid #ccc;
+            background-color: #F7F9FE;
+            color: #333;
+        }
+        .countdown-text {
+            color: #515151;
+        }
+        .cancel-button {
+            background-color: #a6e3e9;
+        }
+        .confirm-button {
+            background-color: #3fc1c9;
+        }
+        .progress {
+            background-color: #abedd8;
+        }
+        
     </style>
-  </head>
-  <body class="web-font">
-    <div id="goPage" class="go-page">
-      <div class="alert alert-danger go-alert hidden" role="alert">验证失败</div>
+    <script type="text/javascript">
+        const host = window.location.host;
 
-      <div class="content">
-        <div class="flex-box">
-          <div class="flex-contain">
-            <div class="logo-img">
-              <p class="blog-name">酷小呵博客</p>
-              <p class="blog-description"></p>
-            </div>
-
-            <!-- 加载ing... -->
-            <div class="loading-item loading-safe flex">
-              <i class="fa-solid fa-shield fa-flip fa-xl"></i>
-              <div class="loading-text">链接安全性检验中 请稍后...</div>
-            </div>
-
-            <div class="go-box"></div>
-          </div>
-          <div class="footer flex-footer">
-            ©2020-2024
-            <a href="https://www.kuhehe.top" class="blog-name"><span>酷小呵博客</span></a>
-            版权所有
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- goPage end -->
-
-    <script src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
-    <script type="module">
-      // 请根据自己博客修改
-      const config = {
-        // 标题
-        title:
-          "安全中心 - 酷小呵博客",
-        // 地址栏图标
-        iconFavicon: "https://img.yywen.top/hy-blog/medias/icon/favicon-32x32.png",
-        // 二维码地址
-        mpImgSrc: "https://bu.dusays.com/2024/03/17/65f6dabeb59ca.jpg",
-        // 博客名称
-        blogName: "酷小呵博客",
-        // 博客描述
-        blogDescription: "爱分享的酷小呵",
-        // 白名单
-        safeUrl: [
-          // 平台 常用平台不用改哈
-          "yywen.top",
-          "bilibili.com",
-          "baike.baidu.com",
-          "csdn.net",
-          "douban.com",
-          "developer.mozilla.org",
-          "foreverblog.cn",
-          "github.com",
-          "gitee.com",
-          "gov.cn",
-          "geekbang.org",
-          "hexo.io",
-          "hitokoto.cn",
-          "jsdelivr.com",
-          "jinrishici.com",
-          "leancloud.cn",
-          "nodejs.cn",
-          "nerdfonts.com",
-          "ohmyposh.dev",
-          "pan.baidu.com",
-          "volantis.js.org",
-          "waline.js.org",
-          "zhihu.com",
-          "zhangxinxu.com",
-          // 好友博客 增加自己的博客友链
-          "www.kuhehe.top",
-          "kuhehe.github.io",
-          "flowus.cn",
-          "kuhehe.flowus.cn"
-        ],
-        tipsTextError: "链接错误，即将关闭当前页面",
-        tipsTextDanger: "第三方网站跳转提醒",
-        tipsTextSuccess: "校验通过，安全跳转中...",
-        textDanger: "您即将离开酷小呵的博客前往如下网址，请您谨慎甄别，注意账号隐私和财产安全：",
-        textSuccess: "您即将离开酷小呵的博客，前往第三方网站：",
-        closeErrorTime: 10,
-        closeDangerTime: 120,
-      };
-      
-      // 获取地址和下载标识
-      const getQueryString = (name, type) => {
-        // 构造一个含有目标参数的正则表达式对象
-        let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"),
-          regDown = new RegExp("&type=" + type),
-          // 匹配地址参数
-          r = window.location.search.substr(1).match(reg),
-          d = window.location.search.substr(1).match(regDown),
-          isDownload = false;
-
-        // 反编译回原地址 取第3个值，不然就返回 Null
-        if (r !== null) {
-          // 如果d不为空，则显示下载提示
-          if (d !== null) {
-            isDownload = true;
-          }
-          return { url: decodeURIComponent(r[2]), isDownload: isDownload };
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            return r ? decodeURI(r[2]) : null;
         }
-        return null;
-      };
 
-      const isValidUrl = (url) => {
-        try {
-          new URL(url);
-          return true;
-        } catch (error) {
-          return false;
-        }
-      }
+        function base64Decode(input) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+            let str = input.replace(/=+$/, '');
+            let output = '';
 
-      // xss攻击（绑定值时使用）
-      const xssCheck = (str, reg) => {
-        return str
-          ? str.replace(
-              reg || /[&<">'](?:(amp|lt|quot|gt|#39|nbsp|#\d+);)?/g,
-              function (a, b) {
-                if (b) {
-                  return a;
-                } else {
-                  return {
-                    "<": "&lt;",
-                    "&": "&amp;",
-                    '"': "&quot;",
-                    ">": "&gt;",
-                    "'": "&#39;",
-                  }[a];
-                }
-              }
-            )
-          : "";
-      };
-
-      // 校验白名单
-      const Validate = (config, getLinkUrl) => {
-        let isSafeUrl = false,
-          safeUrl = config.safeUrl,
-          url = xssCheck(getLinkUrl.url);
-
-        if (safeUrl.length !== 0) {
-          for (let i = 0; i < safeUrl.length; i++) {
-            const ele = safeUrl[i];
-            if (url.includes(ele)) {
-              isSafeUrl = true;
-              break;
+            if (str.length % 4 == 1) {
+                throw new Error("'atob' failed: The string to be decoded is not correctly encoded.");
             }
-          }
+            for (let bc = 0, bs, buffer, idx = 0; buffer = str.charAt(idx++); ~buffer && (bs = bc % 4 ? bs * 64 + buffer : buffer, bc++ % 4) ? output += String.fromCharCode(255 & bs >> (-2 * bc & 6)) : 0) {
+                buffer = chars.indexOf(buffer);
+            }
+            return output;
         }
-        return isSafeUrl;
-      };
 
-      const startCountdown = (time) => {
-        var countdownInterval = setInterval(function() {
-          $('#remainingTime').text(time);
-          time--;
-          if (time < 0) {
-            clearInterval(countdownInterval);
-            $('#tipsText').text('因浏览器安全策略导致无法自动关闭');
-            $('#timeTip').text('请您手动关闭');
+        var jump_url = GetQueryString('u');
+        
+        jump_url = base64Decode(jump_url);
+        
+        var UrlReg = '^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)';
+        if (!jump_url || !jump_url.match(UrlReg)) {
+            document.title = '参数错误，正在返回首页...';
+            jump_url = location.origin;
+        }
+
+        let countdown = 5;
+        let progressElement;
+        let countdownElement;
+        let jumpUrlElement;
+
+        function updateCountdown() {
+            countdownElement.textContent = countdown;
+            progressElement.style.width = (countdown / 5 * 100) + '%';
+            if (countdown === 0) {
+                jump();
+            } else {
+                countdown--;
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+
+        function jump() {
+            location.href = jump_url;
+        }
+
+        function closeWindow() {
+            window.opener = null;
             window.close();
-          }
-        }, 1000);
-      }
-      // 模版基础配置初始
-      const goInit = (config) => {
-        const safeIcon = `<svg t="1705570083729" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4235" width="26" height="26"><path d="M926 215.173333l-384-170.666666a21.333333 21.333333 0 0 0-17.333333 0l-384 170.666666A21.333333 21.333333 0 0 0 128 234.666667v217.813333c0 219.866667 129.373333 419.02 329.6 507.333333 32.793333 14.466667 57.566667 21.5 75.733333 21.5s42.94-7.033333 75.733334-21.5c200.226667-88.333333 329.6-287.486667 329.6-507.333333V234.666667a21.333333 21.333333 0 0 0-12.666667-19.493334z m-206.913333 205.246667l-213.333334 213.333333a21.333333 21.333333 0 0 1-30.173333 0l-128-128a21.333333 21.333333 0 0 1 30.173333-30.173333L490.666667 588.5l198.246666-198.253333a21.333333 21.333333 0 1 1 30.173334 30.173333z" fill="#34A3FF" p-id="4236" data-spm-anchor-id="a313x.search_index.0.i0.3f6a3a81Nseabr" class="selected"></path></svg>`
-        const tplConfig = {
-            loadingType: "loading-error",
-            tipType: "tip3",
-            tipsText: config.tipsTextError,
-            loadingTopicText: config.textDanger,
-            loadingColorType: "loading-color2",
-            goUrl: "/",
-          },
-          getLinkUrl = getQueryString("goUrl", "goDown"),
-          loadingSafe = document.querySelector(".loading-safe"),
-          goBox = document.querySelector(".go-box"),
-          title = document.querySelector("title"),
-          iconFavicon = document.querySelector(".icon-favicon"),
-          blogName = document.querySelectorAll(".blog-name"),
-          blogDescription = document.querySelector(".blog-description");
-
-        // 初始化：标题，favicon，博客名称，博客描述
-        title.textContent = config.title;
-        iconFavicon.setAttribute("href", config.iconFavicon);
-        blogName.forEach((element) => {
-          element.textContent = config.blogName;
-        });
-        blogDescription.textContent = config.blogDescription;
-
-        // 根据地址栏参数判断是下载地址还是纯外链，外链则直接修改a标签按钮url，用户点击跳转
-        if (getLinkUrl && isValidUrl(getLinkUrl.url)) {
-          // 可参考csdn加入后端请求验证地址是否白名单再进一步给出不同场景状态：是白名单，则绿+蓝，否则黄+红
-          const isSafeUrl = Validate(config, getLinkUrl);
-          tplConfig.loadingType = "loading-others";
-          tplConfig.goUrl = xssCheck(getLinkUrl.url);
-          if (isSafeUrl) {
-            tplConfig.tipType = "tip1";
-            tplConfig.tipsText = config.tipsTextSuccess;
-            tplConfig.loadingTopicText = config.textSuccess;
-            tplConfig.loadingColorType = "loading-color1";
-            // 白名单链接直接跳转
-            setTimeout(() => {
-              const goUrlBtn = document.querySelector(".go-url-btn");
-              goUrlBtn.click();
-            }, 2000);
-          } else {
-            tplConfig.tipType = "tip2";
-            tplConfig.tipsText = config.tipsTextDanger;
-            tplConfig.loadingTopicText = config.textDanger;
-            tplConfig.loadingColorType = "loading-color2";
-            startCountdown(config.closeDangerTime);
-          }
-        }
-        else {
-          // Url获取失败或者校验错误
-          tplConfig.tipType = "tip3";
-          tplConfig.tipsText = config.tipsTextError;
-          startCountdown(config.closeErrorTime);
         }
         
-        const sucessbtn = `<div class="flex-end"><span></span><a rel="noopener external nofollow noreferrer" class="loading-btn go-url-btn" href="${tplConfig.goUrl}" target="_self">继续前往</a></div>`;
-        const dangerbtn = `       
-          <div class="flex-end">
-            <div id="timeTip">此页面将在 <span id="remainingTime">120</span> 秒后关闭</div>
-            <a rel="noopener external nofollow noreferrer" class="loading-btn go-url-btn" href="${tplConfig.goUrl}" target="_self">继续前往</a></div>
-          </div>`;
-        const errorbtn = `
-          <div class="flex-end">
-            <div id="timeTip">将在 <span id="remainingTime">10</span> 秒后关闭</div>
-              <a class="loading-btn go-url-btn" href="https://www.kuhehe.top/" target="_self">返回酷小呵博客（kuhehe.top）</a>
-          </div>`;
-        
-        const textbody = `
-          <div class="loading-topic">
-            <span>${tplConfig.loadingTopicText}</span>
-            <a class="${tplConfig.loadingColorType} go-url">${tplConfig.goUrl}</a>
-          </div>
-          ${
-            tplConfig.tipType === "tip1"
-              ? `${sucessbtn}`: tplConfig.tipType === "tip2"
-              ? `${dangerbtn}`: `${errorbtn}`
-          }
-        `;
-        const tpl = `
-          <div class="loading-item ${tplConfig.loadingType} hidden">
-            <div class="flex loading-tip ${tplConfig.tipType}">
-              ${
-                tplConfig.tipType === "tip1"
-                  ? `${safeIcon}`
-                  : tplConfig.tipType === "tip2"
-                  ? `<i class="fa-solid fa-shield-halved fa-xl" style="color: #FC5531;"></i>`
-                  : `<i class="fa-solid fa-circle-xmark fa-shake fa-xl" style="color: #e60a0a;"></i>`
-              }
-              <div class="loading-text" id="tipsText">${tplConfig.tipsText}</div>
-            </div>
-            ${ tplConfig.loadingType === "loading-others" ? textbody : errorbtn}
-          </div>
-        `;
-        // tpl渲染
-        goBox.innerHTML = tpl;
-        const loadingItem = document.querySelector(".go-box .loading-item");
-        loadingSafe.classList.add("fadeOutUp", "fade-animate");
-        loadingItem.classList.remove("hidden");
-        loadingItem.classList.add("fadeInUp", "fade-animate");
-      };
-      goInit(config);
+        function loadAvatar() {
+            const avatarImg = document.querySelector('.avatar');
+            const placeholder = document.querySelector('.avatar-placeholder');
+            const img = new Image();
+            img.src = 'https://bu.dusays.com/2024/06/19/6672f2c43c9b0.gif';
+            img.onload = function() {
+                avatarImg.src = img.src;
+                avatarImg.style.display = 'block';
+                placeholder.style.display = 'none';
+            };
+        }
+
+        window.onload = function() {
+            loadAvatar();
+            progressElement = document.getElementById('progress');
+            countdownElement = document.getElementById('countdown');
+            jumpUrlElement = document.getElementById('jump-url');
+            jumpUrlElement.textContent = jump_url;
+            updateCountdown();
+        }
     </script>
-  </body>
+</head>
+<body>
+    <div class="avatar-placeholder"></div>
+    <img src="" alt="头像" class="avatar">
+    <div class="description">酷小呵-kuhehe.top</div>
+    <div class="subtitle">安全中心</div>
+    <div class="loading">
+        <div class="content">
+            <div class="url-text">您即将离开本站，跳转到：</div>
+            <div class="jump-url" id="jump-url"></div>
+        </div>
+        <div class="countdown-text">⚠ 将在 <span id="countdown">5</span> 秒后跳转，请自行确认链接安全性</div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="button-container">
+            <button class="button cancel-button" onclick="closeWindow()">取消跳转</button>
+            <button class="button confirm-button" onclick="jump()">立即跳转</button>
+        </div>
+    </div>
+</body>
 </html>

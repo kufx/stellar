@@ -5,7 +5,7 @@
 
       allTables = document.getElementsByTagName('table');
 
-      var found = false;
+      var foundCount = 0;
 
       for (var table of allTables) {
         allRows = table.getElementsByTagName('tr');
@@ -16,7 +16,7 @@
             if (cells[j]) {
               var txtValue = cells[j].textContent.toUpperCase();
               if (txtValue.indexOf(filter) > -1) {
-                found = true;
+                foundCount++;
                 break;
               }
             }
@@ -24,12 +24,20 @@
         }
       }
 
-      if (found) {
-        input.style.borderColor = "#4CAF50";
-      } else if (filter === '') {
-        input.style.borderColor = "#808080";
+      if (filter!== '') {
+        if (foundCount > 0) {
+          input.style.borderColor = "#4CAF50";
+        } else {
+          input.style.borderColor = "red";
+        }
+
+        var resultInfo = document.getElementById("resultInfo");
+        resultInfo.style.display = "block";
+        resultInfo.innerHTML = "搜索结果为 <span style='color:#FF0000;font-size:25px;'>" + foundCount + "</span> 条";
       } else {
-        input.style.borderColor = "red";
+        input.style.borderColor = "#808080";
+        var resultInfo = document.getElementById("resultInfo");
+        resultInfo.style.display = "none";
       }
 
       for (var table of allTables) {

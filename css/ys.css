@@ -43,22 +43,6 @@ strong {
 
 
 
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th,
-    td {
-      border: 1px solid black;
-      padding: 15px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #4CAF50;
-      color: black;
-    }
 
     #searchInput {
       width: 50%;
@@ -76,6 +60,17 @@ strong {
       display: block;
     }
 
-    #searchInput:focus {
+    #searchInput:focus,
+    #searchInput:active {
       outline: none;
+      border-color: #007BFF;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    #resultInfo {
+      margin-top: 10px;
+      font-size: 14px;
+      display: none;
+      text-align: center;
+      font-weight: bold;
     }
